@@ -78,11 +78,26 @@
   </div>
 
   <script>
-    // Format date to "Friday, October 25"
+    // Format date to "Friday, October 24"
+    //function formatDate(dateString) {
+    //  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    //  const date = new Date(dateString);
+    //  return date.toLocaleDateString('en-US', options);
+    //}
+
+    // Format date string "2025-10-24" → "Friday, October 24"
     function formatDate(dateString) {
-      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-      const date = new Date(dateString);
-      return date.toLocaleDateString('en-US', options);
+      const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const months = ['January', 'February', 'March', 'April', 'May', 'June', 
+                      'July', 'August', 'September', 'October', 'November', 'December'];
+
+      const [year, month, day] = dateString.split('-').map(Number);
+      // Create date in UTC to avoid local timezone shift, but only for day-of-week
+      const date = new Date(Date.UTC(year, month - 1, day));
+      const weekday = days[date.getUTCDay()];
+      const monthName = months[month - 1];
+      
+      return `${weekday}, ${monthName} ${day}`;
     }
 
     // Format time (remove leading zero if desired, e.g., "9:00" instead of "09:00")
@@ -100,13 +115,6 @@
         if (!response.ok) throw new Error('Failed to load events.json');
         let events = await response.json();
 
-        // Fix common typo: "2025-11-122" → "2025-11-22"
-        events = events.map(event => {
-          if (event.date && event.date.includes('-122')) {
-            event.date = event.date.replace('-122', '-22');
-          }
-          return event;
-        });
 
         // Sort events by date + time
         events.sort((a, b) => new Date(`${a.date}T${a.startTime}`) - new Date(`${b.date}T${b.startTime}`));
