@@ -1,0 +1,100 @@
+[
+  {
+    "date": "2025-10-24",
+    "startTime": "11:00",
+    "endTime": "12:00",
+    "title": "Opening Event!",
+    "description": "Join us for the grand opening with Steve Who? working his magic on the sax!"
+  },
+  {
+    "date": "2025-10-25",
+    "startTime": "12:00",
+    "endTime": "14:00",
+    "title": "Snapshot Gallery Opening.",
+    "description": "DJ Mia will be spinning the tunes as we open a new exhibit in the Snapshot Gallery, featuring 12 photos by 12 artists!"
+  },
+  {
+    "date": "2025-10-25",
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "title": "Fenix Dance Group",
+    "description": "Fantastic Dance Performance presented by the Fenix Dance Group!"
+  },
+  {
+    "date": "2025-10-29",
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "title": "Kinetics Dance",
+    "description": "Fantastic Dance Performance presented by The Kinetics, right above the Art Fair square."
+  },
+  {
+    "date": "2025-10-30",
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "title": "Photo Contest voting opening.",
+    "description": "Live music."
+  },
+  {
+    "date": "2025-10-30",
+    "startTime": "19:00",
+    "endTime": "20:00",
+    "title": "Photo Contest voting opening.",
+    "description": "DJ Vicious takes spins incredible tunes!"
+  },
+  {
+    "date": "2025-11-01",
+    "startTime": "13:00",
+    "endTime": "14:00",
+    "title": "Allegro",
+    "description": "Allegro Dance Group presents us a fantastic dance performance right above the Art Fair square."
+  },
+  {
+    "date": "2025-11-07",
+    "startTime": "12:00",
+    "endTime": "13:00",
+    "title": "Flash Exhibit & Live Music: Marqs",
+    "description": "Marqs takes the stage to play and sing live as we unveil his Flash Exhibit!"
+  },
+  {
+    "date": "2025-11-07",
+    "startTime": "13:00",
+    "endTime": "14:00",
+    "title": "DJ Alex",
+    "description": "DJ Alex takes the stream and spins his tunes!"
+  },
+  {
+    "date": "2025-11-08",
+    "startTime": "12:00",
+    "endTime": "13:00",
+    "title": "Astrolab Gallery: Unveiling Cathedral by Raven Arcana",
+    "description": "It's the Center for the Arts first anniversary and we present live music to the unveiling of this exhibit!"
+  },
+  {
+    "date": "2025-11-08",
+    "startTime": "13:00",
+    "endTime": "14:00",
+    "title": "Astrolab Gallery: Unveiling Cathedral by Raven Arcana",
+    "description": "It's the Center for the Arts first anniversary and DJ Mia takes the stream to spin some fantastic tunes!"
+  },
+  {
+    "date": "2025-11-16",
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "title": "Elysium Cabaret",
+    "description": "Elysium Cabaret brings us a fantastic dance performance, right above the Art Fair square."
+  },
+  {
+    "date": "2025-11-19",
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "title": "MAD about DANCE project",
+    "description": "The MAD about DANCE project presents a fantastic dance performance, right above the Art Fair square."
+  },
+  {
+    "date": "2025-11-22",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "title": "Raizes do Brasil",
+    "description": "The group Raizes do Brasil presents a fantastic dance performance, right above the Art Fair square."
+  }
+]

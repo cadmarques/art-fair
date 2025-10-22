@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calendar • Art Fair</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Calendar-specific styles */
+    .calendar-container {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .event-card {
+      background: rgba(17, 7, 49, 0.6);
+      border: 1px solid #009DFE;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(4px);
+    }
+
+    .event-date {
+      color: #009DFE;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .event-time {
+      color: #ffd700;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .event-title {
+      color: #e0d6ff;
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .event-description {
+      color: #f0ecff;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    .loading {
+      text-align: center;
+      color: #f0ecff;
+      padding: 2rem;
+    }
+
+    .error {
+      color: #ff6b6b;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-layout">
+    <!-- Art Fair logo -->
+    <img src="images/art-fair-logo.jpg" alt="Art Fair Logo" class="page-logo">
+
+    <h1>Event Calendar</h1>
+
+    <!-- Calendar content will load here -->
+    <div class="calendar-container" id="calendar-content">
+      <div class="loading">Loading events…</div>
+    </div>
+
+    <a href="index.html" class="small-back-button">Back</a>
+  </div>
+
+  <script>
+    // Format date to "Friday, October 25"
+    function formatDate(dateString) {
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const date = new Date(dateString);
+      return date.toLocaleDateString('en-US', options);
+    }
+
+    // Format time (remove leading zero if desired, e.g., "9:00" instead of "09:00")
+    function formatTime(timeString) {
+      const [hours, minutes] = timeString.split(':');
+      const hour = parseInt(hours, 10);
+      return `${hour}:${minutes}`;
+    }
+
+    // Load events from JSON
+    async function loadEvents() {
+      const container = document.getElementById('calendar-content');
+      try {
+        const response = await fetch('events.json');
+        if (!response.ok) throw new Error('Failed to load events.json');
+        let events = await response.json();
+
+        // Fix common typo: "2025-11-122" → "2025-11-22"
+        events = events.map(event => {
+          if (event.date && event.date.includes('-122')) {
+            event.date = event.date.replace('-122', '-22');
+          }
+          return event;
+        });
+
+        // Sort events by date + time
+        events.sort((a, b) => new Date(`${a.date}T${a.startTime}`) - new Date(`${b.date}T${b.startTime}`));
+
+        if (events.length === 0) {
+          container.innerHTML = '<p class="error">No events scheduled yet.</p>';
+          return;
+        }
+
+        let html = '';
+        events.forEach(event => {
+          const displayDate = formatDate(event.date);
+          const startTime = formatTime(event.startTime);
+          const endTime = formatTime(event.endTime);
+
+          html += `
+            <div class="event-card">
+              <div class="event-date">${displayDate}</div>
+              <div class="event-time">${startTime} – ${endTime} SLT</div>
+              <div class="event-title">${event.title}</div>
+              <div class="event-description">${event.description}</div>
+            </div>
+          `;
+        });
+
+        container.innerHTML = html;
+      } catch (err) {
+        console.error('Error loading events:', err);
+        container.innerHTML = '<p class="error">⚠️ Could not load calendar. Please check back soon.</p>';
+      }
+    }
+
+    // Load events when page is ready
+    document.addEventListener('DOMContentLoaded', loadEvents);
+  </script>
+</body>
+</html>

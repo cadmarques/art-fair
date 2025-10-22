@@ -1,0 +1,503 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #110731;
+  color: #f8f6ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Logo fade-in animation */
+.logo {
+  max-width: 280px;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 1.8s forwards;
+  margin-bottom: 2rem;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+  color: #e0d6ff;
+  animation: fadeIn 1.8s 0.3s forwards;
+  opacity: 0;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeIn 1.8s 0.6s forwards;
+  color: #009DFE; /* ← Updated to your requested color */
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.nav-button {
+  display: block;
+  padding: 14px 28px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffd700;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  min-width: 160px;
+  text-align: center;
+}
+
+.nav-button:hover {
+  background: rgba(255, 215, 0, 0.15);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.page-content ul.highlights {
+  text-align: left;
+  margin: 1.5rem auto;
+  padding-left: 1.5rem;
+  max-width: 600px;
+}
+
+.page-content ul.highlights li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .logo {
+    max-width: 200px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .nav-button {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    min-width: 140px;
+  }
+}
+
+/* Unified page layout for inner pages */
+.page-layout {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-layout-2 {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-logo {
+  max-width: 220px;
+  height: auto;
+  margin-bottom: 1.8rem;
+  opacity: 0.95;
+}
+
+.page-layout h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #e0d6ff;
+  margin-bottom: 1.6rem;
+}
+
+.page-layout h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #009DFE;
+  margin: 1.8rem 0 1.2rem;
+}
+
+.page-text p {
+  color: #f0ecff;
+  line-height: 1.7;
+  margin-bottom: 1.3rem;
+  font-size: 1.05rem;
+}
+
+/* Highlights list — clean and centered */
+.page-text .highlights {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem auto;
+  display: inline-block;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 1.2rem 1.8rem;
+  border-radius: 10px;
+  min-width: 280px;
+}
+
+.page-text .highlights li {
+  margin-bottom: 0.8rem;
+  color: #ffd700;
+  line-height: 1.5;
+}
+
+.page-text .highlights li::before {
+  content: "• ";
+  color: #009DFE;
+  font-weight: bold;
+}
+
+/* Small, elegant "Back" button */
+.small-back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 8px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffd700;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.small-back-button:hover {
+  background: rgba(255, 215, 0, 0.15);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Organization logo styling */
+.org-logo {
+  max-width: 180px;
+  height: auto;
+  margin: 1.2rem auto 2rem;
+  opacity: 0.95;
+  display: block;
+}
+
+/* Organizer image gallery */
+.org-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.org-gallery img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.org-gallery img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive: stack on very small screens */
+@media (max-width: 500px) {
+  .org-gallery img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* Participants Grid */
+.participants-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 2.5rem 0;
+  width: 100%;
+}
+
+.participant-card {
+  background: rgba(17, 7, 49, 0.6); /* Slightly darker than background for depth */
+  border: 2px solid #009DFE; /* Your light blue frame */
+  border-radius: 16px; /* Soft rounded corners */
+  padding: 24px 20px;
+  width: 260px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.participant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 157, 254, 0.25);
+}
+
+.participant-card h3 {
+  color: #ffd700; /* Gold/yellow for names */
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.participant-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 18px;
+  border-radius: 8px;
+}
+
+.participant-card p {
+  color: #f0ecff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Feature logo (for Flash Exhibits, etc.) */
+.feature-logo {
+  max-width: 200px;
+  height: auto;
+  margin: 1.8rem auto;
+  display: block;
+  opacity: 0.95;
+}
+
+/* Form link button */
+.form-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 24px;
+  background: rgba(0, 157, 254, 0.15); /* Light blue tint */
+  color: #009DFE;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  border: 1px solid rgba(0, 157, 254, 0.3);
+}
+
+.form-link:hover {
+  background: rgba(0, 157, 254, 0.25);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Sponsors Grid */
+.sponsors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 2.5rem 0;
+  width: 100%;
+}
+
+.sponsor-card {
+  background: rgba(17, 7, 49, 0.6);
+  border: 2px solid #009DFE;
+  border-radius: 16px;
+  padding: 24px;
+  width: 280px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.sponsor-card h3 {
+  color: #ffd700;
+  margin: 16px 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.sponsor-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 16px;
+  border-radius: 8px;
+}
+
+.sponsor-card p {
+  color: #f0ecff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Sponsor Buttons */
+.sponsor-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sponsor-button {
+  display: block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  text-align: center;
+}
+
+.slurl-button {
+  background: rgba(0, 157, 254, 0.15);
+  color: #009DFE;
+  border: 1px solid rgba(0, 157, 254, 0.3);
+}
+
+.marketplace-button {
+  background: rgba(255, 215, 0, 0.15);
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.sponsor-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slurl-button:hover {
+  background: rgba(0, 157, 254, 0.25);
+  color: white;
+}
+
+.marketplace-button:hover {
+  background: rgba(255, 215, 0, 0.25);
+  color: white;
+}
+
+/* Sponsors Footer Section */
+.sponsors-footer {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.sponsors-footer h2 {
+  color: #009DFE;
+  margin-bottom: 1.4rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.sponsors-grid-mini {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sponsor-mini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+}
+
+.sponsor-mini img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  opacity: 0.9;
+  transition: opacity 0.25s ease;
+}
+
+.sponsor-mini:hover img {
+  opacity: 1;
+}
+
+.sponsor-mini h3 {
+  font-size: 0.85rem;
+  color: #ffd700;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Link covering the whole footer */
+.sponsors-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Landmark icon on homepage */
+.landmark-link {
+  display: inline-block;
+  margin: 1.8rem auto;
+  animation: fadeIn 1.8s 0.9s forwards;
+  opacity: 0;
+}
+
+.landmark-link img {
+  height: 60px;
+  width: auto;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
+  transition: transform 0.25s ease;
+}
+
+.landmark-link:hover img {
+  transform: scale(1.05);
+}
