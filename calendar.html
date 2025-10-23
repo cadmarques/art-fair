@@ -101,10 +101,19 @@
     }
 
     // Format time (remove leading zero if desired, e.g., "9:00" instead of "09:00")
+    //function formatTime(timeString) {
+    //  const [hours, minutes] = timeString.split(':');
+    //  const hour = parseInt(hours, 10);
+    //  return `${hour}:${minutes}`;
+    //}
+
+    // Format time to 12-hour format with AM/PM (e.g., "13:00" → "1 PM")
     function formatTime(timeString) {
-      const [hours, minutes] = timeString.split(':');
-      const hour = parseInt(hours, 10);
-      return `${hour}:${minutes}`;
+      const [hours, minutes] = timeString.split(':').map(Number);
+      const period = hours >= 12 ? 'PM' : 'AM';
+      let hour12 = hours % 12;
+      if (hour12 === 0) hour12 = 12; // 0h → 12 AM, 12h → 12 PM
+      return `${hour12} ${period}`;
     }
 
     // Load events from JSON
