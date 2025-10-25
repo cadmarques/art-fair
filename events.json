@@ -1,25 +1,5 @@
 [
-  {
-    "date": "2025-10-24",
-    "startTime": "11:00",
-    "endTime": "12:00",
-    "title": "Opening Event!",
-    "description": "Join us for the grand opening with Steve Who? working his magic on the sax!"
-  },
-  {
-    "date": "2025-10-24",
-    "startTime": "12:00",
-    "endTime": "13:00",
-    "title": "Opening Event!",
-    "description": "DJ Mia takes the stage and stream spinning awesome tunes!"
-  },
-  {
-    "date": "2025-10-24",
-    "startTime": "14:00",
-    "endTime": "16:00",
-    "title": "Opening Event!",
-    "description": "DJ Vicious track and video mixing! WOW You dont want to miss this!"
-  },
+
   {
     "date": "2025-10-25",
     "startTime": "12:00",
