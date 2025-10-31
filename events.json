@@ -1,32 +1,11 @@
 [
 
   {
-    "date": "2025-10-29",
-    "startTime": "18:00",
-    "endTime": "19:00",
-    "title": "Kinetics Dance",
-    "description": "Fantastic Dance Performance presented by The Kinetics, right above the Art Fair square."
-  },
-    {
-    "date": "2025-10-30",
+    "date": "2025-10-31",
     "startTime": "12:00",
-    "endTime": "13:00",
-    "title": "Class: Important composition rules.",
-    "description": "More advanced concepts about composition, including Balance, Symmetry and Negative Space."
-  },
-  {
-    "date": "2025-10-30",
-    "startTime": "18:00",
-    "endTime": "19:00",
-    "title": "Photo Contest voting opening.",
-    "description": "Live music."
-  },
-  {
-    "date": "2025-10-30",
-    "startTime": "19:00",
-    "endTime": "20:00",
-    "title": "Photo Contest voting opening.",
-    "description": "DJ Vicious takes spins incredible tunes!"
+    "endTime": "14:00",
+    "title": "DJ Landra",
+    "description": "DJ Landra mixes live! Deep / Melodic / Organic ... come get in the zone!"
   },
   {
     "date": "2025-11-01",
@@ -36,12 +15,33 @@
     "description": "Allegro Dance Group presents us a fantastic dance performance right above the Art Fair square."
   },
   {
+    "date": "2025-11-01",
+    "startTime": "12:00",
+    "endTime": "16:00",
+    "title": "Flash Exhibit: Prins Evergarden",
+    "description": "Six selected photos from the exhibitor's portfolio"
+},
+{
+    "date": "2025-11-03",
+    "startTime": "12:00",
+    "endTime": "16:00",
+    "title": "Flash Exhibit: Maggie Montgolfier",
+    "description": "Six selected photos from the exhibitor's portfolio"
+},
+  {
     "date": "2025-11-04",
     "startTime": "12:00",
     "endTime": "13:00",
     "title": "Winter",
     "description": "Brighten your Tuesday afternoon with the smooth, heartfelt voice of Winter Blitzen, at the Art Fair."
   },
+  {
+    "date": "2025-11-05",
+    "startTime": "12:00",
+    "endTime": "16:00",
+    "title": "Flash Exhibit: Azura Mistwalker",
+    "description": "Six selected photos from the exhibitor's portfolio"
+},
   {
     "date": "2025-11-07",
     "startTime": "12:00",
@@ -71,6 +71,34 @@
     "description": "It's the Center for the Arts first anniversary and DJ Mia takes the stream to spin some fantastic tunes!"
   },
   {
+    "date": "2025-11-09",
+    "startTime": "12:00",
+    "endTime": "16:00",
+    "title": "Flash Exhibit: Stevie Basevi",
+    "description": "Six selected photos from the exhibitor's portfolio"
+},
+{
+    "date": "2025-11-11",
+    "startTime": "12:00",
+    "endTime": "16:00",
+    "title": "Flash Exhibit: Myra Wildmist",
+    "description": "Six selected photos from the exhibitor's portfolio"
+},
+{
+    "date": "2025-11-13",
+    "startTime": "12:00",
+    "endTime": "16:00",
+    "title": "Flash Exhibit: Twain Orfan",
+    "description": "Six selected photos from the exhibitor's portfolio"
+},
+{
+    "date": "2025-11-15",
+    "startTime": "12:00",
+    "endTime": "16:00",
+    "title": "Flash Exhibit: Cayleigh Kage",
+    "description": "Six selected photos from the exhibitor's portfolio"
+},
+  {
     "date": "2025-11-16",
     "startTime": "14:00",
     "endTime": "15:00",
@@ -78,12 +106,33 @@
     "description": "Elysium Cabaret brings us a fantastic dance performance, right above the Art Fair square."
   },
   {
+    "date": "2025-11-17",
+    "startTime": "12:00",
+    "endTime": "16:00",
+    "title": "Flash Exhibit: Woo",
+    "description": "Six selected photos from the exhibitor's portfolio"
+},
+{
+    "date": "2025-11-19",
+    "startTime": "12:00",
+    "endTime": "16:00",
+    "title": "Flash Exhibit: Rawnie Lane",
+    "description": "Six selected photos from the exhibitor's portfolio"
+},
+  {
     "date": "2025-11-19",
     "startTime": "18:00",
     "endTime": "19:00",
     "title": "MAD about DANCE project",
     "description": "The MAD about DANCE project presents a fantastic dance performance, right above the Art Fair square."
   },
+  {
+    "date": "2025-11-21",
+    "startTime": "12:00",
+    "endTime": "16:00",
+    "title": "Flash Exhibit: Roan Forager",
+    "description": "Six selected photos from the exhibitor's portfolio"
+},
   {
     "date": "2025-11-22",
     "startTime": "17:00",
