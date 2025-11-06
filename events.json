@@ -1,8 +1,22 @@
 [
 
+  {
+    "date": "2025-11-06",
+    "startTime": "12:00",
+    "endTime": "13:00",
+    "title": "Corvus Blessed Live Music",
+    "description": "Corvus Blessed takes the stage with warm Rock, Country, Blues, R&B!"
+  },
+    {
+    "date": "2025-11-06",
+    "startTime": "13:00",
+    "endTime": "14:00",
+    "title": "DJ Mia",
+    "description": "DJ Mia takes the stream and spins som great tunes!"
+  },
 
   {
-    "date": "2025-11-05",
+    "date": "2025-11-06",
     "startTime": "12:00",
     "endTime": "16:00",
     "title": "Flash Exhibit: Azura Mistwalker",
@@ -19,8 +33,8 @@
     "date": "2025-11-07",
     "startTime": "13:00",
     "endTime": "14:00",
-    "title": "DJ Alex",
-    "description": "DJ Alex takes the stream and spins his tunes!"
+    "title": "DJ Mia",
+    "description": "DJ Mia takes the stream and spins som great tunes!"
   },
   {
     "date": "2025-11-08",
