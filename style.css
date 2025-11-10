@@ -533,3 +533,91 @@ h1 {
   line-height: 1.7;
   margin: 0;
 }
+
+/* Supporting Partners Page */
+.partners-intro {
+  text-align: center;
+  max-width: 650px;
+  margin: 1.5rem auto 1.8rem;
+  color: #f0ecff;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+#partner-search {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px;
+  margin: 0 auto 2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.2);
+  color: #f8f6ff;
+  font-size: 1rem;
+  display: block;
+  box-sizing: border-box;
+}
+
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 2rem;
+}
+
+.partner-card {
+  background: rgba(17, 7, 49, 0.6);
+  border: 1px solid #009DFE;
+  border-radius: 14px;
+  padding: 22px;
+  width: 280px;
+  text-align: center;
+}
+
+.partner-card h3 {
+  color: #ffd700;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+.partner-card p {
+  color: #f0ecff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.slurl-link {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(0, 157, 254, 0.15);
+  color: #009DFE;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.slurl-link:hover {
+  background: rgba(0, 157, 254, 0.25);
+  color: white;
+}
+
+.region-name {
+  margin-top: 12px;
+  color: rgba(248, 246, 255, 0.6);
+  font-size: 0.85rem;
+}
+
+.loading, .no-results, .error {
+  text-align: center;
+  color: #f0ecff;
+  padding: 2rem;
+  width: 100%;
+}
+
+.no-results {
+  color: #ffd700;
+}

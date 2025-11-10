@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Supporting Partners • Art Fair</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-layout">
+    <!-- Art Fair logo -->
+    <img src="images/art-fair-logo.jpg" alt="Art Fair Logo" class="page-logo">
+
+    <h1>Supporting Partners</h1>
+
+    <p class="partners-intro">
+      Our kiosk is hosted across Second Life by generous community spaces.  
+      Use the search below to find a location near your interests!
+    </p>
+
+    <!-- Search box -->
+    <input type="text" id="partner-search" placeholder="Search by name or keyword (e.g., rock, gallery, music)..." />
+
+    <!-- Partners list (loaded by JS) -->
+    <div id="partners-list" class="partners-grid">
+      <div class="loading">Loading partners…</div>
+    </div>
+
+    <a href="index.html" class="small-back-button">Back</a>
+  </div>
+
+  <script>
+    // Load and display partners
+    async function loadPartners() {
+      const listEl = document.getElementById('partners-list');
+      try {
+        const response = await fetch('partners.json');
+        if (!response.ok) throw new Error('Failed to load partners.json');
+        const partners = await response.json();
+
+        renderPartners(partners);
+        setupSearch(partners);
+      } catch (err) {
+        console.error('Error:', err);
+        listEl.innerHTML = '<p class="error">⚠️ Could not load partners. Please try again later.</p>';
+      }
+    }
+
+    function renderPartners(partners, query = '') {
+      const listEl = document.getElementById('partners-list');
+      
+      if (partners.length === 0) {
+        listEl.innerHTML = '<p class="no-results">No partners found.</p>';
+        return;
+      }
+
+      const filtered = query
+        ? partners.filter(p =>
+            p.name.toLowerCase().includes(query.toLowerCase()) ||
+            p.description.toLowerCase().includes(query.toLowerCase())
+          )
+        : partners;
+
+      if (filtered.length === 0) {
+        listEl.innerHTML = '<p class="no-results">No matches found for “' + query + '”.</p>';
+        return;
+      }
+
+      let html = '';
+      filtered.forEach(partner => {
+        const region = partner.slurl.split('://')[1]?.split('/')[0]?.replace(/%20/g, ' ') || '';
+        html += `
+          <div class="partner-card">
+            <h3>${partner.name}</h3>
+            <p>${partner.description}</p>
+            <a href="${partner.slurl}" class="slurl-link">Visit in SL</a>
+
+          </div>
+        `;
+      });
+
+      listEl.innerHTML = html;
+    }
+
+    function setupSearch(partners) {
+      const searchEl = document.getElementById('partner-search');
+      searchEl.addEventListener('input', (e) => {
+        renderPartners(partners, e.target.value);
+      });
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', loadPartners);
+  </script>
+</body>
+</html>
