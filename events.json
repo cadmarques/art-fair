@@ -1,20 +1,6 @@
 [
 
-  {
-    "date": "2025-11-15",
-    "startTime": "12:00",
-    "endTime": "16:00",
-    "title": "Flash Exhibit: Cayleigh Kage",
-    "description": "Six selected photos from the exhibitor's portfolio"
-},
 
-{
-    "date": "2025-11-15",
-    "startTime": "19:00",
-    "endTime": "20:00",
-    "title": "DJ Jack Lleufer",
-    "description": "Saturday dance with DJ Jack Lleufer taking the stream and spining some great tunes at the Art Fair!"
-},
   {
     "date": "2025-11-16",
     "startTime": "14:00",
@@ -26,19 +12,19 @@
     "date": "2025-11-17",
     "startTime": "12:00",
     "endTime": "16:00",
-    "title": "Flash Exhibit: Woo",
+    "title": "Flash Exhibit: WooMaloo",
     "description": "Six selected photos from the exhibitor's portfolio"
 },
 {
     "date": "2025-11-19",
     "startTime": "12:00",
     "endTime": "16:00",
-    "title": "Flash Exhibit: Rawnie Lane",
+    "title": "Flash Exhibit: AlexCM",
     "description": "Six selected photos from the exhibitor's portfolio"
 },
   {
     "date": "2025-11-19",
-    "startTime": "18:00",
+    "startTime": "16:00",
     "endTime": "19:00",
     "title": "MAD about DANCE project",
     "description": "The MAD about DANCE project presents a fantastic dance performance, right above the Art Fair square."
