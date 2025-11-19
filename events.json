@@ -1,31 +1,18 @@
 [
 
 
-  {
-    "date": "2025-11-18",
-    "startTime": "11:00",
-    "endTime": "12:00",
-    "title": "Class Photography with Firestorm",
-    "description": "Join us for this hour of exploring doing photography with Firestorm."
-  },
-  {
-    "date": "2025-11-18",
-    "startTime": "12:00",
-    "endTime": "16:00",
-    "title": "Flash Exhibit: WooMaloo",
-    "description": "Six selected photos from the exhibitor's portfolio"
-},
+
 {
     "date": "2025-11-19",
     "startTime": "12:00",
     "endTime": "16:00",
     "title": "Flash Exhibit: AlexCM",
-    "description": "Six selected photos from the exhibitor's portfolio"
+    "description": "'Longing' Exhibition"
 },
   {
     "date": "2025-11-19",
     "startTime": "16:00",
-    "endTime": "19:00",
+    "endTime": "17:00",
     "title": "MAD about DANCE project",
     "description": "The MAD about DANCE project presents a fantastic dance performance, right above the Art Fair square."
   },
