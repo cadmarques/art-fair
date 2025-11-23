@@ -1,41 +1,18 @@
 [
 
-{
-    "date": "2025-11-21",
-    "startTime": "17:00",
-    "endTime": "19:00",
-    "title": "DJ Mia - Best in 80s",
-    "description": "DJ Mia takes the stream and spins some great 80s tunes! 1000L best in 80s!"
-},
-
-{
-    "date": "2025-11-20",
-    "startTime": "18:00",
-    "endTime": "19:00",
-    "title": "DJ Sookie Jade",
-    "description": "DJ Sookie Jade will take over the stream and spin some great tunes!"
-},
-
-{
-    "date": "2025-11-20",
-    "startTime": "12:00",
-    "endTime": "16:00",
-    "title": "Flash Exhibit: AlexCM",
-    "description": "'Longing' Exhibition"
-},
 
   {
-    "date": "2025-11-21",
+    "date": "2025-11-23",
     "startTime": "12:00",
     "endTime": "16:00",
     "title": "Flash Exhibit: Roan Forager",
     "description": "Six selected photos from the exhibitor's portfolio"
 },
   {
-    "date": "2025-11-22",
-    "startTime": "17:00",
-    "endTime": "18:00",
-    "title": "Raizes do Brasil",
-    "description": "The group Raizes do Brasil presents a fantastic dance performance, right above the Art Fair square."
+    "date": "2025-11-23",
+    "startTime": "11:00",
+    "endTime": "128:00",
+    "title": "Photography Class - Phototools",
+    "description": "A photography class specifically aimed at exploring the possibilities given by Firestorm Phototools."
   }
 ]
